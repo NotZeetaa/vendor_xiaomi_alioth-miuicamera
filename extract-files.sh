@@ -59,6 +59,11 @@ function blob_fixup() {
     case "${1}" in
         system/priv-app/MiuiCamera/MiuiCamera.apk)
             [ "$2" = "" ] && return 0
+            tmp_dir="${EXTRACT_TMP_DIR}/MiuiCamera"
+            apktool d -q "$2" -o "$tmp_dir" -f
+            grep -rl "com.miui.gallery" "$tmp_dir" | xargs sed -i 's|"com.miui.gallery"|"com.google.android.apps.photos"|g'
+            apktool b -q "$tmp_dir" -o "$2"
+            rm -rf "$tmp_dir"
             apktool_patch "${2}" "$MY_DIR/blob-patches"
             ;;
         system/lib64/libcamera_algoup_jni.xiaomi.so|system/lib64/libcamera_mianode_jni.xiaomi.so)
