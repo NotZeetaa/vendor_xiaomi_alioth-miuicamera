@@ -65,6 +65,7 @@ function blob_fixup() {
             apktool b -q "$tmp_dir" -o "$2"
             rm -rf "$tmp_dir"
             apktool_patch "${2}" "$MY_DIR/blob-patches"
+            split --bytes=20M -d "$2" "$2".part
             ;;
         system/lib64/libcamera_algoup_jni.xiaomi.so|system/lib64/libcamera_mianode_jni.xiaomi.so)
             [ "$2" = "" ] && return 0
