@@ -11,6 +11,7 @@
 /vendor/lib(64)?/libarcsoft_dualcam_refocus\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_high_dynamic_range\.so                               u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_low_light_hdr\.so                                    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarcsoft_mf_superresolution\.so                               u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_portrait_lighting_c\.so                              u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_portrait_lighting\.so                                u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_superportrait\.so                                    u:object_r:same_process_hal_file:s0
@@ -31,6 +32,7 @@
 /vendor/lib(64)?/libmialgo_ie_capture\.so                                        u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmialgo_utils\.so                                             u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmibokeh_712\.so                                              u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmibokeh_855\.so                                              u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmiStereoFactoryRemapLib\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmpbase\.so                                                   u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/librelight_only\.so                                             u:object_r:same_process_hal_file:s0
