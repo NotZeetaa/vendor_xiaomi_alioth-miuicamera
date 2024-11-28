@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/pipa-miuicamera/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/alioth-miuicamera/sepolicy/vendor
 
-include vendor/xiaomi/pipa-miuicamera/common/BoardConfigVendor.mk
+include vendor/xiaomi/alioth-miuicamera/common/BoardConfigVendor.mk
